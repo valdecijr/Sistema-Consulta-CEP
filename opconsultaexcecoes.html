@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta charset="utf-8">
+	<title>|Buscar </title>
+<link rel="icon" type="image/png" href="deacts.png" />
+	
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+	
+	
+	
+<style type="text/css">
+
+</style>
+
+<script type="text/javascript">
+function validaCampo()
+{
+if(document.cadastro.codcli.value=="")
+	{
+	alert("O Campo CPF ou CNPJ é obrigatório!");
+	return false;
+	}
+else
+return true;
+}
+
+</script>
+<!--  -->
+</head>
+
+<body>
+<!-- Header -->
+			<header id="header">
+				<br>
+				<h1><a href="index.html">VOLTAR AO SITE</span></a></h1>
+			</header>
+<br>
+<br>
+<br>
+<div class="form">
+			<div class="col-sm-12">
+				<h2>Fibranetbr</h2>
+				<h3>Consulte a nossa area de cobertura</h3>
+				<p>Digite o seu CEP</p>
+   <form   action="opconsultaexcecoesresultado.php" method="post" onsubmit="return validaCampo(); return false;">
+	<input  type="text" class="btn-default btn"  name="cep" id="cep" />
+	 <br>
+		<input name="cadastrar" class="btn-default btn" type="submit" id="cadastrar" value="Pesquisar!" /> 
+        <br />
+          <br />
+   </form>
+   </div>
+   </div>
+						
+</body>
+</html>
